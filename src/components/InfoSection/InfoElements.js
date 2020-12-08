@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#0c4c86')};
+  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#96adc2')};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -54,7 +54,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: #01bf71;
+  color: #0c4c86;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -65,7 +65,7 @@ export const TopLine = styled.div`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 38px;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
@@ -78,7 +78,7 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
 `;

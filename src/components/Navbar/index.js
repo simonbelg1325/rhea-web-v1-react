@@ -40,7 +40,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo onClick={toggleHome} to='/'>
-              <img src={Logo} alt="logo" style={{height:'80px', width: "50%"}}/>
+              <img src={Logo} alt="logo" style={{height:'50px', width: "30%"}}/>
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars style={{color:'#00a8e9'}}/>
@@ -48,7 +48,7 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
               <NavItem>
                 <NavLinks
-                  to='home'
+                  to='/'
                   smooth={true}
                   duration={500}
                   spy={true}

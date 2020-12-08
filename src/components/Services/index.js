@@ -2,6 +2,9 @@ import React from 'react';
 import Icon1 from '../../images/svg-1.svg';
 import Icon2 from '../../images/svg-3.svg';
 import Icon3 from '../../images/svg-5.svg';
+import Icon7 from '../../images/svg-7.svg';
+import Icon8 from '../../images/svg-8.svg';
+import Icon9 from '../../images/svg-9.svg';
 import {
   ServicesContainer,
   ServicesH1,
@@ -39,21 +42,21 @@ const Services = () => {
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon1} />
+          <ServicesIcon src={Icon9} />
           <ServicesH2>OPEN</ServicesH2>
           <ServicesP>
           Open applicative and digital framework design for integration with existing digital frameworks or applications
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon2} />
+          <ServicesIcon src={Icon8} />
           <ServicesH2>FUTURE PROOF</ServicesH2>
           <ServicesP>
           Latest technological adaptation in regards of the development of proprietary and open applications/digital frameworks to ensure future evolutions are still compatible
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon3} />
+          <ServicesIcon src={Icon7} />
           <ServicesH2>SECURE</ServicesH2>
           <ServicesP>
           Build upon state of the art security protocols to ensure extra layers of security whatever the application or other source added to the intelligent data infrastructure

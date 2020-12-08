@@ -3,17 +3,16 @@ import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 import HeroSection from '../../components/HeroSection';
 import InfoSection from '../../components/InfoSection';
-import { homeObjOne , homeObjTwo, homeObjThree, homeObjfour } from '../Home/Data';
-import Services from '../../components/Services';
+import { homeObjOne } from '../Maintenance/Data';
 
-function Home() {
+function Maintenance() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
   const message = {
-      title: 'Because your data matters',
+      title: 'Maintenance & Support',
       header: 'RHEA NV',
   }
   return (
@@ -22,12 +21,8 @@ function Home() {
       <Navbar toggle={toggle} />
       <HeroSection {...message}/>
       <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjTwo} />
-      <InfoSection {...homeObjThree} />
-      <InfoSection {...homeObjfour} />
-      <Services/>
     </>
   );
 }
 
-export default Home;
+export default Maintenance;

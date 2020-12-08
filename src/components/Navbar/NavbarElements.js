@@ -83,7 +83,7 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavLinks = styled(LinkS)`
+export const NavLinks = styled(LinkR)`
   color: ${({ scrollNav }) => (!scrollNav ? '#fff': '#0c4c86')};
   display: flex;
   align-items: center;
