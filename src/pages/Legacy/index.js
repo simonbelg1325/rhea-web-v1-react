@@ -3,16 +3,16 @@ import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 import HeroSection from '../../components/HeroSection';
 import InfoSection from '../../components/InfoSection';
-import { mainObjOne, mainObjThree, mainObjTwo, mainObjFour, mainObjFive, mainObjSix } from '../Maintenance/Data';
+import { legacyObjOne, legacyObjThree, legacyObjTwo, legacyObjFour, legacyObjFive } from '../Legacy/Data';
 
-function Maintenance() {
+function Legacy() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
   const message = {
-      title: 'Maintenance & Support',
+      title: 'Legacy applications',
       header: 'RHEA NV',
   }
   return (
@@ -20,14 +20,13 @@ function Maintenance() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection {...message}/>
-      <InfoSection {...mainObjOne} />
-      <InfoSection {...mainObjTwo} />
-      <InfoSection {...mainObjThree} />
-      <InfoSection {...mainObjFour} />
-      <InfoSection {...mainObjFive} />
-      <InfoSection {...mainObjSix} />
+      <InfoSection {...legacyObjOne} />
+      <InfoSection {...legacyObjTwo} />
+      <InfoSection {...legacyObjThree} />
+      <InfoSection {...legacyObjFour} />
+      <InfoSection {...legacyObjFive} />
     </>
   );
 }
 
-export default Maintenance;
+export default Legacy;

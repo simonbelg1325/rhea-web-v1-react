@@ -11,7 +11,8 @@ import {
   Heading,
   Subtitle,
   ImgWrap,
-  Img
+  Img,
+  Header
 } from './InfoElements';
 
 const InfoSection = ({
@@ -24,13 +25,15 @@ const InfoSection = ({
   img,
   alt,
   id,
+  header,
   primary,
   darkText,
   videoUrl,
   video,
-  moreDesc
+  moreDesc,
+  moreHeader
 }) => {
-
+//<div><div>{header}</div><Subtitle key={i} darkText={darkText}>{description[item]}</Subtitle></div>
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -40,7 +43,12 @@ const InfoSection = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                {moreDesc ? Object.keys(description).map((desc, i) => (<Subtitle key={i} darkText={darkText}>{description[desc]}</Subtitle> )) : <Subtitle darkText={darkText}>{description}</Subtitle>}
+                {moreDesc ? Object.keys(description).map((item, i) => (
+                  <div>
+                    <Header>{moreHeader ?header[item] : ''}</Header>
+                    <Subtitle key={i} darkText={darkText}>{description[item]}</Subtitle>
+                  </div>
+                )) : <Subtitle darkText={darkText}>{description}</Subtitle>}
               </TextWrapper>
             </Column1>
             <Column2>
