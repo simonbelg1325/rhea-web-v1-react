@@ -27,7 +27,8 @@ const InfoSection = ({
   primary,
   darkText,
   videoUrl,
-  video
+  video,
+  moreDesc
 }) => {
 
   return (
@@ -39,7 +40,7 @@ const InfoSection = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
+                {moreDesc ? Object.keys(description).map((desc, i) => (<Subtitle key={i} darkText={darkText}>{description[desc]}</Subtitle> )) : <Subtitle darkText={darkText}>{description}</Subtitle>}
               </TextWrapper>
             </Column1>
             <Column2>

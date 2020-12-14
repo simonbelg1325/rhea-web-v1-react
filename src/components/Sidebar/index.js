@@ -19,7 +19,7 @@ const Sidebar = ({ isOpen, toggle }) => {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink
-            to='home'
+            to='/'
             onClick={toggle}
             smooth={true}
             duration={500}
@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             HOME
           </SidebarLink>
           <SidebarLink
-            to='maintenance'
+            to='/maintenance'
             onClick={toggle}
             smooth={true}
             duration={500}
@@ -41,7 +41,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             MAINTENANCE
           </SidebarLink>
           <SidebarLink
-            to='legacy'
+            to='/legacy'
             onClick={toggle}
             smooth={true}
             duration={500}
@@ -52,7 +52,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             LEGACY
           </SidebarLink>
           <SidebarLink
-            to='enhanced'
+            to='/enhanced'
             onClick={toggle}
             smooth={true}
             duration={500}
@@ -63,7 +63,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             ENHANCED
           </SidebarLink>
           <SidebarLink
-            to='contactUs'
+            to='/contactUs'
             onClick={toggle}
             smooth={true}
             duration={500}
