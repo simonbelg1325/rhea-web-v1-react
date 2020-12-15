@@ -15,51 +15,51 @@ import {
   ServicesP
 } from './ServicesElements';
 
-const Services = () => {
+const Services = ({header, title1, title2, title3, title4, title5, title6, msg1, msg2, msg3, msg4, msg5, msg6}) => {
   return (
     <ServicesContainer id='services'>
-      <ServicesH1>Our Services</ServicesH1>
+      <ServicesH1>{header}</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />
-          <ServicesH2>EXPERIENCE</ServicesH2>
+          <ServicesH2>{title1}</ServicesH2>
           <ServicesP>
-          20 years of experience regarding development of data rendering systems and support on third party applications
+          {msg1}
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
-          <ServicesH2>COST EFFECTIVE</ServicesH2>
+          <ServicesH2>{title2}</ServicesH2>
           <ServicesP>
-          With our modular approach, cost for developments are drastically reduced
+          {msg2}
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
-          <ServicesH2>BEST IN CLASS</ServicesH2>
+          <ServicesH2>{title3}</ServicesH2>
           <ServicesP>
-          Use of global defined (and used) coding standards based on MS technology
+          {msg3}
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon9} />
-          <ServicesH2>OPEN</ServicesH2>
+          <ServicesH2>{title4}</ServicesH2>
           <ServicesP>
-          Open applicative and digital framework design for integration with existing digital frameworks or applications
+          {msg4}
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon8} />
-          <ServicesH2>FUTURE PROOF</ServicesH2>
+          <ServicesH2>{title5}</ServicesH2>
           <ServicesP>
-          Latest technological adaptation in regards of the development of proprietary and open applications/digital frameworks to ensure future evolutions are still compatible
+          {msg5}
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon7} />
-          <ServicesH2>SECURE</ServicesH2>
+          <ServicesH2>{title6}</ServicesH2>
           <ServicesP>
-          Build upon state of the art security protocols to ensure extra layers of security whatever the application or other source added to the intelligent data infrastructure
+          {msg6}
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>

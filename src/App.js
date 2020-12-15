@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Maintenance from './pages/Maintenance';
 import Legacy from './pages/Legacy';
 import Enhanced from './pages/Enhanced';
+import References from './pages/References';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/maintenance' component={Maintenance} exact />
         <Route path='/enhanced' component={Enhanced} exact />
         <Route path='/legacy' component={Legacy} exact />
+        <Route path='/references' component={References} exact />
         <Route exact path="/helpdesk" render={() => (window.location = "https://helpdesk.rhea.be")} />
       </Switch>
     </Router>

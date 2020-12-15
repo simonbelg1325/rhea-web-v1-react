@@ -33,7 +33,6 @@ const InfoSection = ({
   moreDesc,
   moreHeader
 }) => {
-//<div><div>{header}</div><Subtitle key={i} darkText={darkText}>{description[item]}</Subtitle></div>
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -45,7 +44,7 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 {moreDesc ? Object.keys(description).map((item, i) => (
                   <div>
-                    <Header>{moreHeader ?header[item] : ''}</Header>
+                    <Header>{moreHeader ? header[item] : ''}</Header>
                     <Subtitle key={i} darkText={darkText}>{description[item]}</Subtitle>
                   </div>
                 )) : <Subtitle darkText={darkText}>{description}</Subtitle>}
@@ -53,7 +52,7 @@ const InfoSection = ({
             </Column1>
             <Column2>
               <ImgWrap>
-              {video ? <ReactPlayer url={videoUrl} width='100%' controls='true' /> : <Img src={img} alt={alt} style={{width: '100%'}}/> }
+                {video ? <ReactPlayer url={videoUrl} width='100%' controls='true' /> : <Img src={img} alt={alt} style={{width: '100%'}}/> }
               </ImgWrap>
             </Column2>
           </InfoRow>
