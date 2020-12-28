@@ -9,7 +9,7 @@ import {
   FooterLink,
   NavLogo
 } from './FooterElements';
-import Logo from '../../images/rhea-logo-1.png'
+import Logo from '../../images/Rhea-Logo-Final-L.png'
 
 const Footer = () => {
   return (
@@ -18,7 +18,7 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <NavLogo>
-              <img src={Logo} alt="logo" style={{height:'50%', width: "100%", backgroundColor: "#fff"}}/>
+              <img src={Logo} alt="logo" style={{height:'50%', width: "100%"}}/>
             </NavLogo>
             <FooterLinkItems>
               <FooterLinkTitle>About Us</FooterLinkTitle>

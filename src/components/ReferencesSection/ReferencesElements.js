@@ -7,13 +7,14 @@ export const ReferencesContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  margin-bottom: 50px;
 
 //   @media screen and (max-width: 768px) {
 //     height: 1300px;
 //   }
 
   @media screen and (max-width: 480px) {
-    height: 1800px;
+    height: 2100px;
   }
 `;
 
@@ -57,6 +58,7 @@ export const ReferencesCard = styled.div`
 
 export const ReferencesIcon = styled.img`
   width: 100%;
+  height: 100%;
   margin-bottom: 10px;
 `;
 
