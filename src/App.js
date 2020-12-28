@@ -8,10 +8,12 @@ import Legacy from './pages/Legacy';
 import Enhanced from './pages/Enhanced';
 import References from './pages/References';
 import ContactUs from './pages/ContactUs';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Switch>
         <Route path='/' component={Home} exact />
         <Route path='/maintenance' component={Maintenance} exact />
