@@ -4,6 +4,7 @@ import Sidebar from '../../components/Sidebar';
 import HeroSection from '../../components/HeroSection';
 import InfoSection from '../../components/InfoSection';
 import { legacyObjOne, legacyObjThree, legacyObjTwo, legacyObjFour, legacyObjFive } from '../Legacy/Data';
+import Footer from '../../components/Footer';
 
 function Legacy() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,7 @@ function Legacy() {
       <InfoSection {...legacyObjThree} />
       <InfoSection {...legacyObjFour} />
       <InfoSection {...legacyObjFive} />
+      <Footer />
     </>
   );
 }

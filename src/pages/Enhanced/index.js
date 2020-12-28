@@ -4,6 +4,7 @@ import Sidebar from '../../components/Sidebar';
 import HeroSection from '../../components/HeroSection';
 import InfoSection from '../../components/InfoSection';
 import { enObjFour, enObjOne, enObjThree, enObjTwo, enObjFive } from '../Enhanced/Data';
+import Footer from '../../components/Footer';
 
 function Enhanced() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,7 @@ function Enhanced() {
       <InfoSection {...enObjThree} />
       <InfoSection {...enObjFour} />
       <InfoSection {...enObjFive} />
+      <Footer />
     </>
   );
 }

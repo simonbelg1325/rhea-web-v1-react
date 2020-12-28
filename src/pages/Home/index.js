@@ -5,6 +5,7 @@ import HeroSection from '../../components/HeroSection';
 import InfoSection from '../../components/InfoSection';
 import { homeObjOne , homeObjTwo, homeObjThree, homeObjfour } from '../Home/Data';
 import Services from '../../components/Services';
+import Footer from '../../components/Footer';
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +34,7 @@ function Home() {
     msg6 : 'Build upon state of the art security protocols to ensure extra layers of security whatever the application or other source added to the intelligent data infrastructure',
 
   }
+
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
@@ -43,6 +45,7 @@ function Home() {
       <InfoSection {...homeObjThree} />
       <InfoSection {...homeObjfour} />
       <Services {...serviceMessage}/>
+      <Footer />
     </>
   );
 }

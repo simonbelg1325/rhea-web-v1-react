@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactPlayer from 'react-player/youtube'
+import ReactPlayer from 'react-player/youtube';
 import {
   InfoContainer,
   InfoWrapper,
@@ -33,27 +33,32 @@ const InfoSection = ({
   moreDesc,
   moreHeader
 }) => {
+
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
-              <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                {moreDesc ? Object.keys(description).map((item, i) => (
-                  <div>
-                    <Header>{moreHeader ? header[item] : ''}</Header>
-                    <Subtitle key={i} darkText={darkText}>{description[item]}</Subtitle>
-                  </div>
-                )) : <Subtitle darkText={darkText}>{description}</Subtitle>}
-              </TextWrapper>
+              <div className="animate__animated animate__slideInLeft infinite">
+                <TextWrapper>
+                  <TopLine>{topLine}</TopLine>
+                  <Heading lightText={lightText}>{headline}</Heading>
+                  {moreDesc ? Object.keys(description).map((item, i) => (
+                    <div>
+                      <Header>{moreHeader ? header[item] : ''}</Header>
+                      <Subtitle key={i} darkText={darkText}>{description[item]}</Subtitle>
+                    </div>
+                  )) : <Subtitle darkText={darkText}>{description}</Subtitle>}
+                </TextWrapper>
+              </div>
             </Column1>
             <Column2>
-              <ImgWrap>
-                {video ? <ReactPlayer url={videoUrl} width='100%' controls='true' /> : <Img src={img} alt={alt} style={{width: '100%'}}/> }
-              </ImgWrap>
+              <div className="animate__animated animate__slideInRight infinite">
+                <ImgWrap>
+                  {video ? <ReactPlayer url={videoUrl} width='100%' controls='true' /> : <Img src={img} alt={alt} style={{width: '100%'}}/> }
+                </ImgWrap>
+              </div>
             </Column2>
           </InfoRow>
         </InfoWrapper>

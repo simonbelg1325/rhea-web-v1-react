@@ -2,8 +2,12 @@ import React, { useState } from 'react';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 import HeroSection from '../../components/HeroSection';
-import Iframe from 'react-iframe'
-import { MapContainer, MapInfoContainer, MapInfo, MapInfo1, MapInfo2} from './ContactUsElements';
+import Iframe from 'react-iframe';
+import { ImLocation } from 'react-icons/im';
+import { IoIosMail } from 'react-icons/io';
+import { FaPhone } from 'react-icons/fa';
+import { MapContainer, MapInfoOne, MapInfoTwo, MapInfoThree, MapInfoContainer, MapInfoDiv, MapIcon, MapInfo, MapText } from './ContactUsElements';
+import Footer from '../../components/Footer';
 
 function ContactUs() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,12 +36,35 @@ function ContactUs() {
           tabindex="0">
         </Iframe>
         <MapInfoContainer>
-          <MapInfo/>
-          <MapInfo1/>
-          <MapInfo2/>
+          <MapInfoDiv>
+            <MapInfoOne>
+              <MapInfo>
+                <MapIcon>
+                  <ImLocation />
+                </MapIcon>
+                <MapText>Veldkant 35A, 2550 Kontich</MapText>
+              </MapInfo>
+            </MapInfoOne>
+            <MapInfoTwo>
+              <MapInfo>
+                <MapIcon>
+                  <IoIosMail />
+                </MapIcon>
+              </MapInfo>
+              <MapText>info@rhea.be</MapText>
+            </MapInfoTwo>
+            <MapInfoThree>
+              <MapInfo>
+                <MapIcon>
+                  <FaPhone />
+                </MapIcon>
+                <MapText>03 880 85 89</MapText>
+              </MapInfo>
+            </MapInfoThree>
+          </MapInfoDiv>
         </MapInfoContainer>
       </MapContainer>
-     
+      <Footer />
         
     </>
   );

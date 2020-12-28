@@ -4,6 +4,7 @@ import Sidebar from '../../components/Sidebar';
 import HeroSection from '../../components/HeroSection';
 import InfoSection from '../../components/InfoSection';
 import { mainObjOne, mainObjThree, mainObjTwo, mainObjFour, mainObjFive, mainObjSix } from '../Maintenance/Data';
+import Footer from '../../components/Footer';
 
 function Maintenance() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,8 @@ function Maintenance() {
   const message = {
       title: 'Maintenance & Support',
       header: 'RHEA NV',
-  }
+  };
+
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
@@ -26,6 +28,7 @@ function Maintenance() {
       <InfoSection {...mainObjFour} />
       <InfoSection {...mainObjFive} />
       <InfoSection {...mainObjSix} />
+      <Footer />
     </>
   );
 }
