@@ -14,6 +14,7 @@ import {
   Img,
   Header
 } from './InfoElements';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const InfoSection = ({
   lightBg,
@@ -40,7 +41,7 @@ const InfoSection = ({
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
-              <div className="animate__animated animate__slideInLeft infinite">
+              <ScrollAnimation animateIn={!imgStart ? "slideInLeft" : "slideInRight"}>
                 <TextWrapper>
                   <TopLine>{topLine}</TopLine>
                   <Heading lightText={lightText}>{headline}</Heading>
@@ -51,14 +52,14 @@ const InfoSection = ({
                     </div>
                   )) : <Subtitle darkText={darkText}>{description}</Subtitle>}
                 </TextWrapper>
-              </div>
+              </ScrollAnimation>             
             </Column1>
             <Column2>
-              <div className="animate__animated animate__slideInRight infinite">
+              <ScrollAnimation animateIn={!imgStart ? "slideInRight" : "slideInLeft"}>
                 <ImgWrap>
-                  {video ? <ReactPlayer url={videoUrl} width='100%' controls='true' /> : <Img src={img} alt={alt} style={{width: '100%'}}/> }
+                    {video ? <ReactPlayer url={videoUrl} width='100%' controls='true' /> : <Img src={img} alt={alt} style={{width: '100%'}}/> }
                 </ImgWrap>
-              </div>
+              </ScrollAnimation>
             </Column2>
           </InfoRow>
         </InfoWrapper>
