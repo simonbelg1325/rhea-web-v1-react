@@ -68,6 +68,6 @@ export const ReferencesH1 = styled.h1`
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 `;

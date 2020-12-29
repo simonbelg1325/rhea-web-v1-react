@@ -33,7 +33,7 @@ export const homeObjOne = {
     dark: true,
     primary: true,
     darkText: true,
-    videoUrl: 'https://youtu.be/gig4jpULOL4',
+    videoUrl: 'https://www.youtube.com/watch?v=gig4jpULOL4&feature=youtu.be',
     video:'true'
   };
 

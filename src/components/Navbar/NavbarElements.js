@@ -2,7 +2,7 @@ import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? '#fff' : 'transparent')};
+  background: #fff;
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -83,7 +83,7 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavLinks = styled(LinkR)`
-  color: ${({ scrollNav }) => (!scrollNav ? '#fff': '#0c4c86')};
+  color: #0c4c86;
   display: flex;
   align-items: center;
   text-decoration: none;

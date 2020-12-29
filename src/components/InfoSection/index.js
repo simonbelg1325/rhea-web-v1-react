@@ -46,9 +46,9 @@ const InfoSection = ({
                   <TopLine>{topLine}</TopLine>
                   <Heading lightText={lightText}>{headline}</Heading>
                   {moreDesc ? Object.keys(description).map((item, i) => (
-                    <div>
+                    <div key={i}>
                       <Header>{moreHeader ? header[item] : ''}</Header>
-                      <Subtitle key={i} darkText={darkText}>{description[item]}</Subtitle>
+                      <Subtitle darkText={darkText}>{description[item]}</Subtitle>
                     </div>
                   )) : <Subtitle darkText={darkText}>{description}</Subtitle>}
                 </TextWrapper>
@@ -57,7 +57,7 @@ const InfoSection = ({
             <Column2>
               <ScrollAnimation animateIn={!imgStart ? "slideInRight" : "slideInLeft"}>
                 <ImgWrap>
-                    {video ? <ReactPlayer url={videoUrl} width='100%' controls='true' /> : <Img src={img} alt={alt} style={{width: '100%'}}/> }
+                    {video ? <ReactPlayer url={videoUrl} width='100%' controls={true} /> : <Img src={img} alt={alt} style={{width: '100%'}}/> }
                 </ImgWrap>
               </ScrollAnimation>
             </Column2>

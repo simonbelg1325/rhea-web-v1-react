@@ -12,7 +12,9 @@ export const ServicesContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    height: 1800px;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px;
   }
 `;
 
@@ -31,6 +33,11 @@ export const ServicesWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
     padding: 0 20px;
   }
 `;

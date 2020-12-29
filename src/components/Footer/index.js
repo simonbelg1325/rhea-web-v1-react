@@ -17,18 +17,20 @@ const Footer = () => {
       <FooterWrap>
         <FooterLinksContainer>
           <FooterLinksWrapper>
-            <NavLogo>
-              <img src={Logo} alt="logo" style={{height:'50%', width: "100%"}}/>
-            </NavLogo>
             <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to='/'>Home</FooterLink>
-              <FooterLink to='/maintenance'>Maintenance</FooterLink>
-              <FooterLink to='/legacy'>Legacy</FooterLink>
-              <FooterLink to='/enhanced'>Enhanced</FooterLink>
-              <FooterLink to='/references'>References</FooterLink>
-              <FooterLink to='/contactUs'>Contact</FooterLink>
+              {/* <FooterLinkTitle>About Us</FooterLinkTitle> */}
+              <FooterLink to="/" >Home</FooterLink>
+              <FooterLink to="/maintenance" >Maintenance</FooterLink>
+              <FooterLink to="/legacy" >Legacy</FooterLink>
             </FooterLinkItems>
+            <FooterLinkItems>
+              <FooterLink to="/enhanced" >Enhanced</FooterLink>
+              <FooterLink to="/references" >References</FooterLink>
+              <FooterLink to="/contactUs" >Contact</FooterLink>
+            </FooterLinkItems>
+            <NavLogo>
+              <img src={Logo} alt="logo" style={{height:'100%', width: "95%", padding: '20px'}}/>
+            </NavLogo>
           </FooterLinksWrapper>
         </FooterLinksContainer>
       </FooterWrap>
