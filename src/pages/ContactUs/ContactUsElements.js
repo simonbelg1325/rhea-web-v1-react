@@ -19,6 +19,7 @@ export const MapInfoOne = styled.div`
     width: 200px;
     display:flex;
     background-color: #00a8e9;
+    border-radius: 100px;
 
     @media screen and (max-width: 768px) {
         position: static;
@@ -31,6 +32,7 @@ export const MapInfoTwo = styled.div`
     width: 200px;
     background-color: #00a8e9;
     margin: 0px auto;
+    border-radius: 100px;
 
     @media screen and (max-width: 768px) {
        margin: 0;
@@ -45,6 +47,7 @@ export const MapInfoThree = styled.div`
     height: 200px;
     width: 200px;
     background-color: #00a8e9;
+    border-radius: 100px;
 
     @media screen and (max-width: 768px) {
        position: static;
