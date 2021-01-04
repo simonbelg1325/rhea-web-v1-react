@@ -5,6 +5,10 @@ export const MapContainer = styled.div`
   height: 600px;
   display: flex;
   position relative;
+
+  @media screen and (max-width: 768px) {
+    height: 1300px;
+}
 `;
 
 export const MapInfoOne = styled.div`
@@ -15,6 +19,11 @@ export const MapInfoOne = styled.div`
     width: 200px;
     display:flex;
     background-color: #00a8e9;
+
+    @media screen and (max-width: 768px) {
+        position: static;
+        margin-bottom: 20px;
+    }
 `;
 
 export const MapInfoTwo = styled.div`
@@ -22,6 +31,11 @@ export const MapInfoTwo = styled.div`
     width: 200px;
     background-color: #00a8e9;
     margin: 0px auto;
+
+    @media screen and (max-width: 768px) {
+       margin: 0;
+       margin-bottom: 20px;
+    }
 `;
 
 export const MapInfoThree = styled.div`
@@ -31,6 +45,9 @@ export const MapInfoThree = styled.div`
     height: 200px;
     width: 200px;
     background-color: #00a8e9;
+
+    @media screen and (max-width: 768px) {
+       position: static;
 `;
 
 
@@ -39,6 +56,10 @@ export const MapInfoContainer = styled.div`
     height: 200px;
     position: absolute;
     bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+        bottom: 486px;
+    }
 }
 `;
 export const MapInfoDiv = styled.div`
@@ -49,6 +70,13 @@ export const MapInfoDiv = styled.div`
     justify-content
     display: flex;
     position; relative;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        height: 670px;
+        align-items: center;
+    }
 }
 `;
 
