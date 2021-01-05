@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player/youtube';
+import './player.css';
 import {
   InfoContainer,
   InfoWrapper,
@@ -57,7 +58,7 @@ const InfoSection = ({
             <Column2>
               <ScrollAnimation animateIn={!imgStart ? "slideInRight" : "slideInLeft"}>
                 <ImgWrap>
-                    {video ? <ReactPlayer url={videoUrl} width='100%' controls={true} /> : <Img src={img} alt={alt} style={{width: '100%'}}/> }
+                    {video ? <ReactPlayer className="react-player" url={videoUrl} controls={true} /> : <Img src={img} alt={alt} style={{width: '100%'}}/> }
                 </ImgWrap>
               </ScrollAnimation>
             </Column2>

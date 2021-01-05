@@ -1,0 +1,11 @@
+.react-player {
+  width: 555px !important;
+  height: 312px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .react-player {
+    width: 403px !important;
+    height: 226px !important;
+  }
+}
