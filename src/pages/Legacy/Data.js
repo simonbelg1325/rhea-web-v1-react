@@ -14,7 +14,7 @@ export const legacyObjOne = {
       'Legacy systems are not suited to a corporate that is growing through mergers and acquisitions. These systems are unable to easily connect and talk to other systems.'
     ],
     buttonLabel: '',
-    imgStart: false,
+    imgStart: true,
     img: require('../../images/legacy.png'),
     alt: 'Legacy',
     dark: true,
@@ -39,7 +39,7 @@ export const legacyObjTwo = {
     ],
     buttonLabel: '',
     imgStart: false,
-    img: require('../../images/Cube.png'),
+    img: require('../../images/Augmented-data-reality.png'),
     alt: 'Cube',
     dark: true,
     primary: true,
